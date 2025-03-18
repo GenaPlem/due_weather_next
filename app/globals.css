@@ -1,42 +1,56 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Add fonts */
+@font-face {
+  font-family: "Quicksand";
+  src: url('/fonts/quicksand/static/quicksand_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Quicksand";
+  src: url('/fonts/quicksand/static/quicksand_semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+  font-family: "Quicksand";
+  src: url('/fonts/quicksand/static/quicksand_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Reset all default margins and paddings */
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Add gradient background */
+  background: linear-gradient(303deg, #16AFF0 30%, #FFDE83 100%);
+  min-height: 100vh;
+  font-family: Quicksand, sans-serif;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Container to wrap content */
+.container {
+  max-width: 1416px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* To hide the headings */
+.hidden_heading {
+  display: none;
+}
+/* To add glassmorpism effect to some element */
+.glassmorphism {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+/* To add bold font weight to some element */
+.bold {
+  font-weight: 600;
 }
