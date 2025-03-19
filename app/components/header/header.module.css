@@ -1,0 +1,10 @@
+.header {
+  padding: 20px 0;
+}
+/* Logo styles */
+.logo {
+  display: contents;
+  color: white;
+  font-size: 35px;
+  letter-spacing: -2px;
+}
